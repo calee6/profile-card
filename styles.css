@@ -1,0 +1,154 @@
+/* Colors */
+:root {
+    --dark-cyan: #19a2ae;
+    --very-dark-desaturated-blue: #2d3248;
+    --dark-grayish-blue: #6a6f81;
+    --dark-gray: #969696;
+}
+
+
+
+
+/* Element Selectors */
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    align-items: center;
+    background-color: var(--dark-cyan);
+    color: var(--very-dark-desaturated-blue);
+    display: flex;
+    font-family: 'Kumbh Sans';
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h3, p {
+    margin: 0;
+}
+
+h6 {
+    color: var(--dark-grayish-blue);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+hr {
+    border: 0.5px solid #dcdcdc;
+    margin: 35px 0px;
+}
+
+img {
+    border: 5px solid white;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    color: var(--dark-grayish-blue);
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+
+
+
+/* Class Selectors*/
+.attribution {
+    bottom: 10px;
+    font-size: 10px;
+    position: absolute;
+}
+
+.age {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.bottom-circle, .top-circle {
+    height: 700px;
+    position: fixed;
+    width: 700px;
+    z-index: -1;
+}
+
+.bottom-circle {
+    background: url(/images/bg-pattern-bottom.svg);
+    background-size: contain;
+    bottom: -400px;
+    right: -200px;
+}
+
+.engagements {
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    width: 100%;
+}
+
+.engagements, hr, .user {
+    bottom: 13%;
+    position: relative;
+}
+
+.image-background {
+    background: url(/images/bg-pattern-card.svg);
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+    width: 100%;
+}
+
+.main-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 50px rgb(86, 86, 86);
+    height: 420px;
+    width: 375px;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.top-circle {
+    background: url(/images/bg-pattern-top.svg);
+    background-size: contain;
+    left: -250px;
+    top: -300px;
+
+}
+
+.user div {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+    .bottom-circle {
+        bottom: -375px;
+        right: -400px;
+    }
+
+    .top-circle {
+        left: -450px;
+        top: -350px;
+    }
+}
